@@ -1,0 +1,65 @@
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>part15</title>
+    <style>
+        /*position =>
+        absolute는 위치를 자유롭게 조정한다 스크롤 올리거나 내릴시 움직인다
+        fixed는 위치를 자유롭게 조절하지만 스크롤 내릴때 따라간다
+        static은 정적 기본 디폴트 값이다
+        relative 원래 생성될 위치에서 top left를 더해 위치한다
+        */
+        div:nth-child(1){
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position:fixed;
+            top:200px;left:200px;
+            opacity: 0.5;
+            z-index: 20; /*클수록 나중에 찍은걸로 안다*/
+        }
+        div:nth-child(2){
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position:absolute;
+            top:250px;left:250px;
+            opacity: 0.5;
+            z-index: 10;
+        }
+        div:nth-child(3){
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            position:static;
+            top:300px;left:300px;
+            opacity: 0.5;
+        }
+        #wrap{
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            background-color: yellow;
+            top:600px; left:200px;
+            opacity: 1;
+        }
+        #wrap .content{
+            width:100px;
+            height: 100px;
+            position: absolute;
+            background-color: mediumslateblue;
+            top: 100px; left:100px;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div id="wrap">
+        <div class="content"></div>
+    </div>
+</body>
+</html>

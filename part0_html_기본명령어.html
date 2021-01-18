@@ -1,0 +1,101 @@
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>part</title>
+</head>
+<body>
+    <!--주석-->
+    <!--<br />은 줄 바꿈이다.
+    편집기가 <br>해도 잡아주지만 원래는 <br />이니 습관을 들이자!-->
+    안녕하세요<br />
+    Hello!<br />
+
+    <!--글씨 h1~h6-->
+    <h1>test</h1><!--글씨크기 크다-->
+    <h6>test</h6><!--글씨크기 작다-->
+    <p>여기는 글이야..</p><!--문단 기본 16픽셀의 크기-->
+    <p><i>KOREA</i></p><!--이탤릭체-->
+    <p>KOREA<sup>seoul</sup></p><!--제곱근형태처럼 위로 작게-->
+    <p><ins>KOREA</ins></p><!--밑줄 긋기-->
+    <p><del>KOREA</del></p><!--글자 중앙 선긋기-->
+
+    <p><span style="color:blue">Seoul</span></p><!--글씨 색상-->
+    <p><mark>Seoul</mark></p><!--형광펜-->
+    <p><strong>Seoul</strong></p><!--진하게-->
+    
+    <!--하이퍼링크 a-->
+    <a href="#none">구글홈페이지</a><br />
+    <a href="https://www.google.com">구글홈페이지</a><br />
+    <a href="https://www.google.com" target="_self">구글홈페이지</a><!--default 값--><br />
+    <a href="https://www.google.com" target="_blank">구글홈페이지</a>
+
+    <span></span>
+    <p>ul 리스트</p>
+    <ul>
+        <li>첫번째</li>
+        <li>두번째</li>
+    </ul>
+    <p>ol 리스트</p>
+    <ol>
+        <li>첫번째</li>
+        <li>두번째</li>
+    </ol>
+    <ol type="a">
+        <li>첫번째</li>
+        <li>두번째</li>
+    </ol>
+    <ol type="a" start="3">
+        <li>세번째</li>
+        <li>네번째</li>
+    </ol>
+    <dl>
+        <dt>한식</dt>
+        <dd>한식은 맛있다</dd>
+        <dd>그렇다</dd>
+    </dl>
+
+    <!--표-->
+    <table border="1">
+        <!--caption 표 이름 붙이는데 가운데 정렬로-->
+        <!--figcaption 표이름 붙이는데 왼쪽 정렬 하지만 표 앞이나 뒤에 가능-->
+        <caption>성적 공지</caption>
+        <tr>
+            <td colspan="4">중간고사</td> <!--행 합치기-->
+        </tr>
+        <tr>
+            <td rowspan="2">점수</td> <!--열 합치기-->
+            <td>영어</td>
+            <td>수학</td>
+        </tr>
+        <tr>
+            <td>60</td>
+            <td>70</td>
+        </tr>
+    </table>
+
+    <!--이미지-->
+    <!--alt는 이미지가 깨졌을 경우 텍스트로 표시
+    title은 사진위에 커서올리면 나오는 제목-->
+    <p><img src="image/lion.jpg" alt="lion사진" width="200px" height="200px" title="라이언"></p>
+    <p><img src="lo.jpg" alt="lion사진"></p>
+
+    <!--음악 넣기
+    controls 창을 뭘로 보여주냐
+    autoplay 자동재생 loop 계속 반복-->
+    <!--autoplay나 loop는 안해도 된다-->
+    <audio src="image/hiphop.mp3" controls="controls" autoplay="autoplay" loop="loop"></audio><br />
+
+    <!--비디오 넣기-->
+    <!--type는 굳이 안해도 된다-->
+    <!-- 
+    src : 비디오 파일의 주소
+    controls : 컨트롤러 표시
+    autoplay : 자동 재생
+    loop : 반복 재생
+    width : 영상의 가로길이
+    height : 영상의 세로길이
+    muted : 음소거 -->
+    <video controls="controls" src="image/video.mp4" type="video/mp4" width="500px" height="500px"></video>
+</body>
+</html>

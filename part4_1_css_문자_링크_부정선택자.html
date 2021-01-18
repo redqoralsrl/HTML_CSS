@@ -1,0 +1,36 @@
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>part12</title>
+    <style>
+        /*문자 선택자*/
+        /*첫번째 글자*/
+        #history2:first-letter, #history1:first-letter{
+            font-size: 2em;
+        }
+        /*첫번째 줄*/
+        #history2::first-line, #history1:first-line{
+            color: blue;
+        }
+        /*링크 선택자*/
+        #link_content a::after{
+            content: ' - ' attr(href);
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <p id="history2">
+            2014 04월 09일<br>서울산업진흥원......
+        </p>
+        <p id="history1">
+            2013 01월 12일.....<br>다누리 시민청
+        </p>
+    </div>
+    <ul id="link_content">
+        <li><a href="https://www.google.com">구글</a></li>
+        <li><a href="https://www.naver.com">네이버</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>part13</title>
+    <style>
+        body{
+            background-image: url('image/sana2.jpg');
+            background-size: 100%;
+            background-repeat: no-repeat; /*사진반복 사용안함*/
+            /*background-attachment: fixed;*/
+        }
+        /*display =>
+        block - 층층이 쌓는다
+        inline - 옆으로 붙여간다
+        inline-block - 블록이 가지고 있는 높이 속성을 가지고 옆으로 붙여간다
+
+        visibiliity : hidden => 태그 속성이 없는거지 그 자리는 만들어 준다
+        */
+        ul li{
+            display: inline-block;
+            width: 200px;
+            height: 100px;
+            text-align: center;
+        }
+        ul li:nth-child(1){
+            background-color: blue;
+        }
+        ul li:nth-child(2){
+            background-color: red;
+            opacity: 0.5;
+        }
+        ul li:nth-child(3){
+            opacity: 0.3;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>우리나라 만세!</li>
+        <li>대한민국 만세!</li>
+        <li>Korea Fighting!</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>part2</title>
+    <style>ul{list-style: none;}</style>
+</head>
+<body>
+    <form action="http://localhost/login/php" method="POST">
+        <fieldset >
+            <legend>로그인 창</legend>
+            <ul>
+                <li>
+                    <label for="uid">아이디 :</label>
+                    <input type="text" id="uid" autofocus required size="10"><!--autofocus requierd는 무조건 적어라는 명령어-->
+                </li>
+                <li>
+                    <label for="pwd">비밀번호 :</label>
+                    <input type="password" id="pwd" size="10">
+                </li>
+                <li>
+                    <label for="phoneNum">연락처 :</label>
+                    <input type="tel" id="phoneNum" size="4"><input type="tel" id="phoneNum" size="4"><input type="tel" id="phoneNum" size="4">
+                </li>
+                <li>
+                    <label for="age">나이<small>(만) :</small></label>
+                    <input type="number" id="age" value="20" min="1" max="99" step="1"><!--value는 초기 세팅 값, min은 최솟값, max는 최댓값, step은 증감정도-->
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset >
+            <legend>회원가입 창</legend>
+            <ul>
+                <li>
+                    증명사진 :<input type="file" name="face">
+                </li>
+                <li>
+                    성별 :
+                    <input type="radio" name="gender" value="m">남
+                    <input type="radio" name="gender" value="w">여
+                </li>
+                <li>
+                    공부 분야 :
+                    <input type="checkbox" name="subject" value="math" checked="checked">수학<!--checked는 이미 체크 되어 있다-->
+                    <input type="checkbox" name="subject" value="eng">영어
+                    <input type="checkbox" name="subject" value="science">과학
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset >
+            <legend>기타정보 창</legend>
+            <ul>
+                <li>
+                    자기소개 :<br />
+                    <textarea rows="5" cols="30" placeholder="간략하게 적으시오."></textarea>
+                </li>
+                <li>
+                    국적 :
+                    <select>
+                        <option selected="selected">korea</option>
+                        <option>japan</option>
+                        <option>america</option>
+                        <option>france</option>
+                    </select>
+                </li>
+                <li>
+                    선호하는 직장 (중복가능):<br />
+                    <select multiple="multiple">
+                        <option>금융</option>
+                        <option>개발자</option>
+                        <option>기획</option>
+                        <option>서비스</option>
+                    </select>
+                </li>
+                <li>
+                    <input type="search"><input type="button" value="검색">
+                </li>
+                <li>
+                    여행날짜 :
+                    <input type="date" name="start">
+                    <input type="date" name="end">
+                </li>
+            </ul>
+        </fieldset>
+        <input type="submit" value="제출하기">
+        <input type="reset" value="다시쓰기">
+    </form>
+</body>
+</html>

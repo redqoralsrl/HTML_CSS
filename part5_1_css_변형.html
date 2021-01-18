@@ -1,0 +1,32 @@
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>part18</title>
+    <style>
+        /* transition-duration : 변형되는 시간 */
+        /* transition-timing-function : ease-in 느리다가 점점 빨라진다 ease-out은 처음에 빠르다가 점점 느려진다 */
+        #wrap .rec{width: 50px; height: 50px; background-color: blue; transition-duration: 3s;}
+        /* hover : 마우스 포인터 댔을때 변형 */
+        #wrap .rec:hover{width: 100px; height: 100px; background-color: magenta;}
+        /* active : 마우스 눌렀을때 변형 */
+        #wrap .rec:active{width: 200px;height: 200px; background-color: yellow; border-radius: 100px;}
+        #line{float: left;
+            width: 50px; height: 50px; background-color: magenta; transition-duration: 4s;}
+        #line:hover{height: 500px; background-color: magenta;}
+        #line2{float: left;
+            width: 50px; height: 50px; background-color: red; transition-duration: 4s;
+        transition-timing-function: ease-out;}
+        #line2:hover{height: 500px; background-color: magenta;}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="rec"></div>
+    </div>
+    <div class="linetest">
+        <div id="line"></div>
+        <div id="line2"></div>
+    </div>
+</body>
+</html>

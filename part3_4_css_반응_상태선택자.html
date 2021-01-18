@@ -1,0 +1,49 @@
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>part10</title>
+    <style>
+        
+        div{
+            background-color: coral;
+            width: 300px;
+            margin: 30px; /*위, 오른쪽, 아래, 왼쪽으로 공간을 줄 수 있다. auto는 브라우저 좌우 여백을 동등하게 처리한다*/
+        }
+        /*hover 마우스를 올린 상태가 hover다 -> 반응 선택자*/
+        li:hover{
+            color: blue;
+            font-size: 30px;
+        }
+        /*input을 눌렀을때 커진다*/
+        input:focus{
+            border: 2px solid #10e2fd;
+            padding: 10px /*모서리하고 약간 떨어져 있다*/
+        }
+        /*치고나면 마젠타로 남는다*/
+        input:enabled{
+            color: magenta;
+        }
+        /*비활성화 된 곳 색상*/
+        input:disabled{
+            color:chocolate
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>menu1</li>
+            <li>menu2</li>
+            <li>menu3</li>
+            <li>menu4</li>
+        </ul>
+    </div>
+
+    <form>
+        이름 : <input type="text" name="uname"><br>
+        아이디 : <input type="text" name="uid"><br>
+        비밀번호 : <input type="password" name="upw" value="12345" disabled="disabled"><br><!--disabled 변경 불가능 비횔성 상태-->
+    </form>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>part8</title>
+    <style>
+        #header{
+            width: 500px;
+            background-color: blueviolet;
+            border: 1px solid red;
+            text-align: center;
+        }
+        #wrap{
+            width: 500px;
+            background-color: brown;
+            border:2px solid blue;
+            text-align: center;
+            overflow: hidden;
+        }
+        #content{
+            width: 300px;
+            border: 1px solid yellowgreen;
+            float: left; /*왼쪽에 붙이 겠다. 다음 나오는 콘텐츠도 자동으로 붙여준다*/
+        }
+        #side-banner{
+            border: 1px solid seagreen;
+            float: left;
+        }
+        #footer{
+            clear: both; /*위에 float: left를 하면 속성이 내려올 수 있다
+            영향을 없애기 위해 사용*/
+            width: 500px;
+            background-color: yellow;
+            border: 3px solid magenta;
+            text-align: center;
+        }
+        .menu1{
+            color: blue;
+            font-weight: bold;
+        }
+        .menu1, .menu3, .menu5{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>HEADER</h1>
+    </div>
+    <div id="wrap">
+        <div id="content">
+            <h1>CONTENT</h1>
+            <ul>
+                <li class="menu1">menu1</li>
+                <li class="menu2">menu2</li>
+                <li class="menu3">menu3</li>
+                <li class="menu4">menu4</li>
+                <li class="menu5">menu5</li>
+            </ul>
+        </div>
+        <div id="side_banner">
+            <h1>BANNER</h1>
+            <a href="http://www.sba.seoul.kr" target="_blank"></a>
+        </div>
+    </div>
+    <div id="footer">
+        <h1>FOOTER</h1>
+    </div>
+</body>
+</html>

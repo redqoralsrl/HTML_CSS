@@ -1,0 +1,33 @@
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>part7</title>
+    <style>
+        /*
+        margin 박스의 바깥부분
+        padding 박스의 안쪽 모서리 부분
+        box-sizing 
+        */
+        *{
+            margin:0; padding: 0;
+        }
+        div{
+            width: 100px; height: 100px;
+        }
+        div:nth-child(1){
+            background: red;
+        }
+        div:nth-child(2){
+            background-color: green;
+            border: 5px solid gray;
+            box-sizing: border-box; /*border를 하면 바깥 마진부분에 생기는데
+            box-sizing은 길이를 맞춰준다*/
+        }
+    </style>
+</head>
+<body>
+    <div>content</div>
+    <div>content</div>
+</body>
+</html>
